@@ -1,6 +1,4 @@
-package com.anthonnymax.cadPessoas;
-
-import java.math.BigDecimal;
+package com.anthonnymax.cadPessoas.entidade;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
