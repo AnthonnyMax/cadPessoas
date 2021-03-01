@@ -28,23 +28,12 @@ public class MatriculaDisciplinaPessoa {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date data;
 	
-	@ManyToOne
-	private Disciplina disciplina;
-	
 	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
 	@JoinColumn(name="pessoa_id")
 	private List<Pessoa> pessoa = new ArrayList<>();
 	
 	@ManyToOne
 	private Turma turma;
-
-	public Disciplina getDisciplina() {
-		return disciplina;
-	}
-
-	public void setDisciplina(Disciplina disciplina) {
-		this.disciplina = disciplina;
-	}
 
 	public List<Pessoa> getPessoa() {
 		return pessoa;

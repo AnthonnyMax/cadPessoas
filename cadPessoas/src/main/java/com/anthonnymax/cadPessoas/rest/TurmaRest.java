@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.anthonnymax.cadPessoas.dao.TurmaDao;
-import com.anthonnymax.cadPessoas.entidade.Curso;
 import com.anthonnymax.cadPessoas.entidade.Turma;
 
 
