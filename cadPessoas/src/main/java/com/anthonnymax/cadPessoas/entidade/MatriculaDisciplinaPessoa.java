@@ -10,7 +10,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -31,21 +30,9 @@ public class MatriculaDisciplinaPessoa {
 	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
 	@JoinColumn(name="pessoa_id")
 	private List<Pessoa> pessoa = new ArrayList<>();
-	
-	@ManyToOne
-	private Turma turma;
 
 	public List<Pessoa> getPessoa() {
 		return pessoa;
-	}
-
-	
-	public Turma getTurma() {
-		return turma;
-	}
-
-	public void setTurma(Turma turma) {
-		this.turma = turma;
 	}
 
 	public Long getId() {

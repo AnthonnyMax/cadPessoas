@@ -3,7 +3,11 @@ package com.anthonnymax.cadPessoas;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@SpringBootApplication // faz a classe se comportar como start do projeto
+@EnableSwagger2
+
 public class CadPessoasApplication {
 
 	public static void main(String[] args) {
